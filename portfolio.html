@@ -13,7 +13,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <!--styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--styles-->
     <link rel="stylesheet" href="./css/styles.css">
 
 
@@ -21,90 +24,97 @@
 
 <body>
     <header class="header">
-        <nav>
+        <div class="container">
+            <div class="container-nav">
+        <nav class="header-nav">
+            
             <a class="logo-link" href="./index.html"> Web<span class="logo-span">Studio</span></a>
-            <ul class="ul">
+            <ul class="header-menu">
                 <li><a class="header-link" href="./studio.html">Studio</a></li>
                 <li><a class="header-link" href="./portfolio.html">Portfolio</a></li>
                 <li><a class="header-link" href="">Contacts</a></li>
             </ul>
         </nav>
+
         <address>
-            <ul class="ul">
+            <ul class="header-menu">
                 <li><a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li><a class="address-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section>
+        <section class="section-portfolio">
+            <div class="container">
             <h1 class="visually-hidden">Portfolio work</h1>
-<ul class="ul">
+<ul class="ul-button">
     <li><button class="portfolio-button" type="button">All</button></li>
     <li><button class="portfolio-button">Web Site</button></li>
     <li><button class="portfolio-button">App</button></li>
     <li><button class="portfolio-button">Design</button></li>
     <li><button class="portfolio-button">Marketing</button></li>
 </ul>
-<ul class="ul">
-    <li>
+<ul class="ul-portfolio-card">
+    <li class="li-card">
         <a class="card" href="#">
         <img src="./images/portfolio1.jpg" alt="banking" width="360" height="300">
             <h3 class="name-project">Banking App Interface Concept</h3>
             <p class="branch">App</p>
         </a>
     </li>
-<li>
+<li class="li-card">
     <a class="card" href="#">
     <img src="./images/portfolio2.jpg" alt="payment" width="360" height="300">
     <h3 class="name-project">Cashless Payment</h3>
     <p class="branch">Marketing</p>
     </a>
 </li>
-<li>
+<li class="li-card">
     <a class="card" href="#">
     <img src="./images/portfolio3.jpg" alt="meditaion" width="360" height="300">
     <h3 class="name-project">Meditaion App</h3>
     <p class="branch">App</p>
     </a>
 </li>
- <li>
+ <li class="li-card">
     <a class="card" href="#">
      <img src="./images/portfolio4.jpg" alt="taxi" width="360" height="300">
     <h3 class="name-project">Taxi Service</h3>
     <p class="branch">Marketing</p>
     </a>
 </li>
-<li>
+<li class="li-card">
     <a class="card" href="#">
     <img src="./images/portfolio5.jpg" alt="screen" width="360" height="300">
     <h3 class="name-project">Screen Illustrations</h3>
     <p class="branch">Design</p>
     </a>
 </li>
-<li>
+<li class="li-card">
     <a class="card" href="#">
     <img src="./images/portfolio6.jpg" alt="courses" width="360" height="300">
     <h3 class="name-project">Online Courses</h3>
     <p class="branch">Marketing</p>
     </a>
 </li>
-<li>
+<li class="li-card">
     <a class="card" href="#">
      <img src="./images/portfolio7.jpg" alt="instastories" width="360" height="300">
     <h3 class="name-project">Instagram Stories Concept</h3>
     <p class="branch">Design</p>
     </a>
 </li>
-<li>
+<li class="li-card">
     <a class="card" href="#">
     <img src="./images/portfolio8.jpg" alt="organic food" width="360" height="300">
     <h3 class="name-project">Organic Food</h3>
     <p class="branch">Web Site</p>
     </a>
  </li>
-<li>
+<li class="li-card">
     <a class="card" href="#">
     <img src="./images/portfolio9.jpg" alt="coffee" width="360" height="300">
     <h3 class="name-project">Fresh Coffee</h3>
@@ -112,7 +122,7 @@
     </a>
 </li>
     </ul>
-
+</div>
 </section>
 
     </main>
