@@ -24,6 +24,15 @@ display: block;
 max-width: 100%;
 height: auto;
 }
+ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+}
+h1 h2 h3 h4 {
+   margin: 0;
+   padding: 0;
+}
 .container{
 width: 100%;
 max-width: 1158px;
@@ -34,6 +43,8 @@ padding-right: 15px ;
 .container-nav {
 display: flex;
 align-items: center;
+justify-content: space-around;
+border-bottom: 1px solid var(--color-conflover);
 }
 .header-nav {
    display: flex;
@@ -45,20 +56,22 @@ align-items: center;
  
 .header { 
    color: var(--color-navyblue);
-   border-color: var(--color-conflover);
-   border-bottom: 1px;
  }
 
 .logo-link {
+display: block;
 margin-right: 76px;
-    color: var(--color-iris);
-    font-family: Raleway, sans-serif; 
-        font-size: 18px;
-        font-weight: 800;
-        line-height: 1.33;
-        letter-spacing: 0.03em;
-      text-decoration: none;
-      text-transform: uppercase;
+padding-top: 24px;
+padding-bottom: 24px;
+   color: var(--color-iris);
+   font-family: Raleway, sans-serif; 
+   font-size: 18px;
+   font-weight: 800;
+   line-height: 1.33;
+   letter-spacing: 0.03em;
+   text-decoration: none;
+   text-transform: uppercase;
+     
   }
 .logo-link .logo-span:focus {
    color: var(--color-ocean);
@@ -69,20 +82,12 @@ color: var(--color-navyblue);
  }
  .header-menu {
    display: flex;
-
    gap: 40px;
    list-style-type: none;
-   padding: 24px 0;
+   padding: 0;
    margin-top: 0;
    margin-bottom: 0;
-   ;
  }
-
- .ul{
-   list-style-type: none;
-   padding: 0;
-   margin: 0;
-}
 .header-link {
    display: block;
    padding-top: 24px;
@@ -98,6 +103,7 @@ color: var(--color-ocean);
 }
 
 .address-link {
+   display: block;
    padding-top: 24px;
    padding-bottom: 24px;
    color: var(--color-primary);
@@ -120,12 +126,13 @@ text-align: center;
 
 
 .hero-title {
-   margin-top: 0;
+   margin: 0 auto;
    color: var(--color-white);
    font-size: 56px;
    font-weight: 700;
    line-height: 1.07;
    letter-spacing: 0.02em;
+   max-width: 496px;
    text-align: center;
    
 }
@@ -134,7 +141,6 @@ text-align: center;
 .button-main { 
    padding: 16px 32px;
    margin-top: 48px;
-   
    border-radius: 4px;
    border: 0;
    min-width: 169px;
@@ -244,7 +250,7 @@ background-color: var(--color-cloud);
 .desctibe-team {
    background-color: var(--color-white);
    margin: 0;
-   border-radius: 4px;
+   border-radius: 0 0 4px 4px;
    
 }
 .footer {
@@ -274,11 +280,11 @@ width: 264px;
 .ul-button {
    display: flex;
    align-items: center;
-   gap: 24px;
+   gap:24px;
    justify-content: center;
    list-style-type: none;
-      padding: 0 0 72px 0;
-      margin: 0;
+      padding: 0;
+      margin: 0 0 72px 0;
 }
 .card {
    text-decoration: none;
@@ -286,43 +292,40 @@ width: 264px;
 .portfolio-button {
    padding: 12px 24px ;
    color: var(--color-iris);
-   background-color: var(--color-cloud);
-   border-color: var(--color-conflover);  
+   background-color: var(--color-cloud); 
       font-family: Roboto, sans-serif;
       font-size: 16px;
       font-weight: 500;
       line-height: 1.5;
       letter-spacing: 0.04em;
       cursor: pointer;
-      border: 1px;
+      border: 1px solid var(--color-conflover);
       border-radius: 4px;
 }
 .portfolio-button:hover, .portfolio-button:focus{
    color: var(--color-white);
    background-color: var(--color-ocean);
+   border-color: transparent;
 }
 .ul-portfolio-card {
    display: flex;
    flex-wrap: wrap;
-   gap: 24px;
+   row-gap: 48px;
+   column-gap: 24px;
    align-items: center;
   
    padding: 0;
-   margin-top: 0;
-   margin-left: 0;
-   margin-bottom:-48px ;
-   margin-right: -24px;
+   margin: 0;
 }
 .project-branch {
-   margin: 32px 10px;
+   padding: 32px 16px;
+   border-left: 1px solid var(--color-conflover);
+   border-bottom: 1px solid var(--color-conflover);
+   border-right: 1px solid var(--color-conflover);
 }
 .li-card {
-flex-basis: calc(100%/3-24px);
-
-margin-top: 0;
-margin-left: 0;
-margin-bottom: 48;
-margin-right: 24;
+flex-basis: calc((100% - 2*24px) / 3);
+margin:0;
 padding: 0;
 list-style-type: none;
    /*outline: 1px solid tomato;
